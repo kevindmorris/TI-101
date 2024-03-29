@@ -1,5 +1,42 @@
-$bg: lightblue;
+$bg: rgb(224, 247, 255);
+
+$xs: 320px;
+$sm: 480px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1200px;
+
+:root {
+  background-color: $bg;
+  font-family: "Courier New", Courier, monospace;
+  @media (min-width: $xs) {
+    margin-left: calc($xs / 8);
+    margin-right: calc($xs / 8);
+  }
+  @media (min-width: $sm) {
+    margin-left: calc($sm / 8);
+    margin-right: calc($sm / 8);
+  }
+  @media (min-width: $md) {
+    margin-left: calc($md / 4);
+    margin-right: calc($md / 4);
+  }
+  @media (min-width: $lg) {
+    margin-left: calc($lg / 4);
+    margin-right: calc($lg / 4);
+  }
+  @media (min-width: $xl) {
+    margin-left: calc($xl / 4);
+    margin-right: calc($xl / 4);
+  }
+}
 
 body {
-  background: $bg;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
