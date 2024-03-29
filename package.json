@@ -1,0 +1,14 @@
+{
+  "name": "ti-101",
+  "version": "1.0.0",
+  "description": "The Texas Instruments 101 elementary calculator.",
+  "keywords": [
+    "webpack"
+  ],
+  "license": "MIT",
+  "author": "Kevin Morris",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
