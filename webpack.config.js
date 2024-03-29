@@ -44,9 +44,14 @@ module.exports = {
       filename: "index.html",
       template: "src/index.html",
       favicon: "src/assets/favicon.png",
+      inject: true,
+      hash: true,
       meta: {
         viewport: "width=device-width, initial-scale=1.0",
       },
     }),
   ],
+  devServer: {
+    static: { directory: path.resolve(__dirname, "dist") },
+  },
 };
